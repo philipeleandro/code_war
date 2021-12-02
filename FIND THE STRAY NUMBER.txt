@@ -1,0 +1,17 @@
+def stray (numbers)
+  dif_num = 0
+  n = 0
+  
+  numbers.each do |num|
+    if numbers[0] != numbers[1]
+      dif_num = num
+      n += 1
+    else numbers[n] != numbers[n+1] and numbers[n] != numbers[n-1]
+      dif_num = num
+      n += 1
+    end
+  end
+dif_num
+end
+
+https://www.codewars.com/kata/57f609022f4d534f05000024/train/ruby
